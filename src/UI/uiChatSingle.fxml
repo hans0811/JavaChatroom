@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="chatSingle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="410.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ChatSingleController">
+<children>
+    <AnchorPane fx:id="background" layoutY="58.0" prefHeight="628.0" prefWidth="410.0" style="-fx-background-color: linear-gradient(to right top, #0e3775, #823a7e, #c84665, #e2773d, #ccb629); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="58.0">
+        <children>
+            <VBox layoutX="23.0" layoutY="77.0" prefHeight="155.0" prefWidth="386.0" />
+            <ListView fx:id="lvChatWindow" layoutY="20.0" prefHeight="550.0" prefWidth="410.0" style="-fx-background-color: linear-gradient(to left top, #eeeded, #e7dfe1, #ddd1d9, #cec5d4, #bbbacf)linear-gradient(to left top, #eeeded, #e7dfe1, #ddd1d9, #cec5d4, #bbbacf);" />
+            <Button fx:id="btnSend" defaultButton="true" layoutX="23.0" layoutY="574.0" mnemonicParsing="false" onAction="#sendMessageAction" style="-fx-background-color: transparent;" />
+            <TextField fx:id="inpText" layoutX="14.0" layoutY="581.0" prefHeight="32.0" prefWidth="346.0" promptText="...">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@css/style.css" />
+               </stylesheets>
+            </TextField>
+            <ImageView fx:id="btnImg" fitHeight="30.0" fitWidth="30.0" layoutX="367.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pic/uiSned-01-01.png" />
+               </image>
+            </ImageView>
+        </children>
+    </AnchorPane>
+      <AnchorPane fx:id="infoBar" prefHeight="77.0" prefWidth="410.0" style="-fx-background-color: #362F59; -fx-background-radius: 0.5em;">
+         <children>
+            <Label fx:id="userName" layoutX="23.0" layoutY="25.0" prefHeight="27.0" prefWidth="112.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="canBtn" cancelButton="true" layoutX="381.0" layoutY="6.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="32.0" prefWidth="75.0" stylesheets="@css/btnStyle.css" text="X" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="infoBar1" layoutX="-3.0" layoutY="67.0" prefHeight="11.0" prefWidth="413.0" style="-fx-background-color: #221D38#221D38;" />
+</children>
+</AnchorPane>

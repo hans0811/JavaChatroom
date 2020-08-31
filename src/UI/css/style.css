@@ -1,0 +1,113 @@
+.text-field {
+    -fx-background-color: -fx-background ;
+    -fx-text-box-border: black;
+    -fx-background-insets: 0, 0 0 0 0 ;
+    -fx-background-radius: 1em ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+    -fx-text-box-border: black;
+    -fx-background-radius: 1em ;
+}
+
+#contentArea{
+    -fx-background-color: #fff, #fff;
+}
+
+#contentArea.content {
+    -fx-background-color: #fff;
+}
+
+#contentArea:focused .content {
+    -fx-background-color: #fff;
+}
+.text-area.scroll-bar:vertical:disabled {
+    -fx-opacity: 0;
+}
+.text-area.scroll-pane {
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: never;
+}
+
+/*.list-cell {*/
+/*    -fx-control-inner-background:  #BF5A74 ;*/
+/*}*/
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    /*-fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+     */
+    -fx-background-color: #F5EBFF;
+    -fx-text-fill: #7C4270;
+}
+
+.list-cell:even {
+    -fx-background-color: #362F59;
+    -fx-text-fill: white;
+}
+
+.list-cell:odd {
+    -fx-background-color: #362F59;
+    -fx-text-fill: white;
+}
+
+.list-view, .split-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+#maleBtn .radio {
+    -fx-border-width: 1px;
+    -fx-border-color: #8a8a8a;
+    -fx-background-color: white;
+    -fx-background-image: null;
+    -fx-border-radius: 10px;
+    -fx-padding: 2px;
+}
+#maleBtn .radio:selected {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+#maleBtn -radio:armed {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+#maleBtn -radio:determinate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+#maleBtn -radio:indeterminate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+#maleBtn .dot {
+    -fx-background-radius: 8px;
+    -fx-padding: 4px;
+}
+
+#femaleBtn .radio {
+    -fx-border-width: 1px;
+    -fx-border-color: #8a8a8a;
+    -fx-background-color: white;
+    -fx-background-image: null;
+    -fx-border-radius: 10px;
+    -fx-padding: 2px;
+}
+#femaleBtn .radio:selected {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+#femaleBtn -radio:armed {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+#femaleBtn -radio:determinate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+#femaleBtn -radio:indeterminate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+#femaleBtn .dot {
+    -fx-background-radius: 8px;
+    -fx-padding: 4px;
+}

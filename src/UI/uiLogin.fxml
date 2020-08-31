@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginBg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.LoginController">
+   <children>
+      <AnchorPane layoutX="418.0" layoutY="30.0" prefHeight="741.0" prefWidth="468.0" style="-fx-background-color: white; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="418.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label alignment="CENTER" layoutX="92.0" layoutY="171.0" text="Sign in to Your Account">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inpName" layoutX="121.0" layoutY="289.0" prefHeight="24.0" prefWidth="254.0" promptText="Username">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@css/style.css" />
+               </stylesheets>
+            </TextField>
+            <PasswordField fx:id="inpPassword" layoutX="121.0" layoutY="338.0" prefHeight="9.0" prefWidth="254.0" promptText="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@css/style.css" />
+               </stylesheets>
+            </PasswordField>
+            <Button fx:id="btnSignIn" defaultButton="true" layoutX="213.0" layoutY="444.0" mnemonicParsing="false" onAction="#actionSignIn" prefHeight="32.0" prefWidth="75.0" stylesheets="@css/btnStyle.css" text="Sing in" />
+            <Label alignment="CENTER" layoutX="110.0" layoutY="243.0" text="Doesn't  have an account yet?" textFill="#656565">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAdd" layoutX="356.0" layoutY="242.0" mnemonicParsing="false" onAction="#actionSignUp" prefHeight="24.0" prefWidth="51.0" style="-fx-border-radius: 12em;" text="ADD">
+               <font>
+                  <Font name="Roboto Condensed" size="12.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@css/btnStyle.css" />
+               </stylesheets></Button>
+            <Button fx:id="canBtn" cancelButton="true" layoutX="435.0" layoutY="10.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="32.0" prefWidth="75.0" stylesheets="@css/btnStyle.css" text="X" />
+            <Label fx:id="errorMsg" alignment="CENTER" layoutX="129.0" layoutY="399.0" prefHeight="17.0" prefWidth="238.0" textAlignment="CENTER" textFill="#b90000" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="26.0" prefHeight="749.0" prefWidth="435.0" style="-fx-background-color: linear-gradient(to right top, #0e3775, #823a7e, #c84665, #e2773d, #ccb629); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <VBox layoutX="23.0" layoutY="77.0" prefHeight="644.0" prefWidth="386.0">
+               <children>
+                  <Label fx:id="uiTitle01" text="MYBHAM" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Bold Condensed" size="80.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="uiTitle02" text="CHAT" textFill="#e4e4e4">
+                     <font>
+                        <Font name="Roboto Condensed" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

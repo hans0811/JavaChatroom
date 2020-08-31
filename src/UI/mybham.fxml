@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.myBhamController">
+    <children>
+        <AnchorPane fx:id="background" layoutX="246.0" layoutY="15.0" prefHeight="749.0" prefWidth="435.0" style="-fx-background-color: linear-gradient(to right top, #0e3775, #823a7e, #c84665, #e2773d, #ccb629); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="246.0" AnchorPane.topAnchor="15.0">
+            <children>
+                <VBox layoutX="23.0" layoutY="77.0" prefHeight="155.0" prefWidth="386.0">
+                    <children>
+                        <Label fx:id="uiTitle01" text="MYBHAM" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto Bold Condensed" size="87.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="uiTitle02" text="CHAT" textFill="#e4e4e4">
+                            <font>
+                                <Font name="Roboto Condensed" size="40.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            <ProgressBar fx:id="loadingBar" layoutX="27.0" layoutY="228.0" prefHeight="4.0" prefWidth="377.0" progress="0.71" style="-fx-background-size: 0; -fx-background-insets: 0;" stylesheets="@css/btnStyle.css" AnchorPane.topAnchor="228.0" />
+            <Label layoutX="27.0" layoutY="706.0" text="LaXuecheng Niubel" textFill="WHITE" />
+            <Label layoutX="143.0" layoutY="706.0" text="Yirong Wang" textFill="WHITE" />
+            <Label layoutX="224.0" layoutY="706.0" text="Menghan Tsai" textFill="WHITE" />
+            <Label layoutX="28.0" layoutY="725.0" text="Mingjie Zhu" textFill="WHITE" />
+            <Label layoutX="102.0" layoutY="725.0" text="Xingzhi Yan" textFill="WHITE" />
+            <Label layoutX="27.0" layoutY="683.0" text="Copyright © Uludağ" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

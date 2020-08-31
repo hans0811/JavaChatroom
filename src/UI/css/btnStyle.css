@@ -1,0 +1,92 @@
+#btnSignIn{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+   -fx-border-color:null;
+   -fx-background-color:  #007BCF ;
+   -fx-background-radius: 0%;
+}
+
+#btnSignIn:hover{     
+  -fx-background-color: null;
+  -fx-text-fill: #007BCF ;
+  -fx-font-weight:bold; 
+  -fx-background-radius: 0%;
+  -fx-border-color:#007BCF ;
+ 
+}
+
+#btnSignUp{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-border-color:null;
+    -fx-background-color:  #007BCF ;
+    -fx-background-radius: 0%;
+}
+
+#btnSignUp:hover{
+    -fx-background-color: null;
+    -fx-text-fill: #007BCF ;
+    -fx-font-weight:bold;
+    -fx-background-radius: 0%;
+    -fx-border-color:#007BCF ;
+
+}
+
+#btnAdd{
+    -fx-font-size: 12;
+    -fx-text-fill: white;
+    -fx-font-family: "Roboto Cn";
+    -fx-font-weight: bold;
+   -fx-border-color:null;
+   -fx-background-color:  #CF005B ;
+   -fx-background-radius: 12em;
+}
+
+#btnAdd:hover{
+    -fx-font-size: 12;
+  -fx-background-color: null;
+  -fx-font-family: "Roboto Cn";
+  -fx-text-fill: #CF005B;
+  -fx-font-weight:bold; 
+  -fx-border-radius: 12em;
+  -fx-border-color:#CF005B ;
+ 
+}
+
+#canBtn{
+-fx-background-radius: 5em;
+-fx-min-width: 20px;
+-fx-min-height: 20px;
+-fx-max-width: 20px;
+-fx-max-height: 20px;
+-fx-background-color: -fx-body-color;
+-fx-background-insets: 0px;
+-fx-padding: 0px;
+}
+
+#backBtn{
+    -fx-background-radius: 5em;
+    -fx-min-width: 20px;
+    -fx-min-height: 20px;
+    -fx-max-width: 20px;
+    -fx-max-height: 20px;
+    -fx-background-color: -fx-body-color;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+}
+
+.progress-bar > .bar {
+    -fx-padding:0;
+    -fx-background-radius:0;
+    -fx-background-insets: 0;
+    -fx-background-color: white;
+}
+
+.progress-bar > .track {
+    -fx-background-color: transparent;
+    -fx-background-radius:0;
+    -fx-background-insets: 0, 0;
+
+}
